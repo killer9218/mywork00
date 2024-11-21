@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Signup Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #ffffff, #007BFF);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 400px;
+      padding: 20px;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #007BFF;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .toggle {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .toggle a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .toggle a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="loginContainer">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required>
+      <button type="submit">Login</button>
+    </form>
+    <div class="toggle">
+      Don't have an account? <a href="#" onclick="showSignup()">Sign Up</a>
+    </div>
+  </div>
+
+  <div class="container" id="signupContainer" style="display: none;">
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+      <label for="signupEmail">Email</label>
+      <input type="text" id="signupName" placeholder="Enter your email" required>
+      <label for="signupEmail">Password</label>
+      <input type="Password" id="signupPassword" placeholder="Create a password" required>
+      <label for="signupPassword">Password</label>
+      <input type="password" id="signupPassword" placeholder="Confirm you password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="toggle">
+      Already have an account? <a href="#" onclick="showLogin()">Login</a>
+    </div>
+  </div>
+
+  <script>
+    const loginContainer = document.getElementById('loginContainer');
+    const signupContainer = document.getElementById('signupContainer');
+
+    function showSignup() {
+      loginContainer.style.display = 'none';
+      signupContainer.style.display = 'block';
+    }
+
+    function showLogin() {
+      signupContainer.style.display = 'none';
+      loginContainer.style.display = 'block';
+    }
+  </script>
+</body>
+</html>

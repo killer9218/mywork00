@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Center - Earn with Us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #007BFF, #ffffff);
+      color: #333;
+    }
+
+    .container {
+      width: 80%;
+      margin: 30px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      color: #007BFF;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .faq-section {
+      margin-top: 20px;
+    }
+
+    .faq-item {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    .faq-item h3 {
+      font-size: 18px;
+      color: #007BFF;
+      cursor: pointer;
+    }
+
+    .faq-item h3:hover {
+      text-decoration: underline;
+    }
+
+    .faq-item p {
+      font-size: 16px;
+      line-height: 1.6;
+      display: none;
+    }
+
+    .faq-item.active p {
+      display: block;
+    }
+
+    .contact-support {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .contact-support a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .contact-support a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Help Center</h1>
+    <p>Find answers to common questions or contact us for further assistance.</p>
+
+    <div class="faq-section">
+      <div class="faq-item">
+        <h3>How do I create an account?</h3>
+        <p>To create an account, click the "Sign Up" button on the homepage, fill in your details, and submit the form. You’ll receive a confirmation email to verify your account.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How can I earn rewards?</h3>
+        <p>You can earn rewards by completing surveys, tasks, or offers listed on your dashboard. Make sure to follow the instructions provided for each task.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I withdraw my earnings?</h3>
+        <p>Once you reach the minimum payout threshold, go to the "Withdraw" section in your account, select your preferred payout method, and submit a request. Payments are processed within 3–5 business days.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What if I have issues with my account?</h3>
+        <p>If you experience issues with your account, such as login problems or account suspension, contact our support team using the "Contact Us" page or email us at support@earnwithus.com.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I use multiple accounts?</h3>
+        <p>No, each user is allowed only one account. Multiple accounts may result in suspension and forfeiture of earnings.</p>
+      </div>
+    </div>
+
+    <div class="contact-support">
+      <p>Still have questions? Contact our support team:</p>
+      <a href="contact us.html">Contact Support</a>
+    </div>
+  </div>
+
+  <script>
+    // Script to toggle FAQ answers
+    const faqItems = document.querySelectorAll('.faq-item h3');
+    faqItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const parent = item.parentNode;
+        parent.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

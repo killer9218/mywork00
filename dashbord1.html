@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Earn with Us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #007BFF, #ffffff);
+    }
+
+    .sidebar {
+      width: 250px;
+      height: 100vh;
+      background-color: #0056b3;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    .sidebar a:hover {
+      background-color: #007BFF;
+    }
+
+    .main-content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+
+    .header {
+      background-color: #007BFF;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .dashboard-stats {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+
+    .stat-card {
+      flex: 1;
+      min-width: 200px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .stat-card h3 {
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+
+    .stat-card p {
+      font-size: 24px;
+      margin: 0;
+      color: #333;
+    }
+
+    .tasks {
+      margin-top: 30px;
+    }
+
+    .tasks h2 {
+      margin-bottom: 20px;
+      color: #007BFF;
+    }
+
+    .task-list {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .task-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .task-item:last-child {
+      border-bottom: none;
+    }
+
+    .task-item button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .task-item button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="Sidebar">
+    <h2>Earn with Us</h2>
+    <a href="#">Dashboard</a>
+    <a href="#">My Earnings</a>
+    <a href="#">Complete Tasks</a>
+    <a href="#">Surveys</a>
+    <a href="#">Offers</a>
+    <a href="#">Referrals</a>
+    <a href="#">Settings</a>
+    <a href="logout.html">Logout</a>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <h1>Welcome to Your Dashboard</h1>
+    </div>
+
+    <div class="dashboard-stats">
+      <div class="stat-card">
+        <h3>Total Earnings</h3>
+        <p>$123.45</p>
+      </div>
+      <div class="stat-card">
+        <h3>Pending Tasks</h3>
+        <p>8</p>
+      </div>
+      <div class="stat-card">
+        <h3>Completed Tasks</h3>
+        <p>25</p>
+      </div>
+      <div class="stat-card">
+        <h3>Referrals</h3>
+        <p>12</p>
+      </div>
+    </div>
+
+    <div class="tasks">
+      <h2>Available Tasks</h2>
+      <div class="task-list">
+        <div class="task-item">
+          <span>Complete a survey</span>
+          <button>Start</button>
+        </div>
+        <div class="task-item">
+          <span>Watch a video</span>
+          <button>Start</button>
+        </div>
+        <div class="task-item">
+          <span>Sign up for an offer</span>
+          <button>Start</button>
+        </div>
+        <div class="task-item">
+          <span>Test a mobile app</span>
+          <button>Start</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
